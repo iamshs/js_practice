@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Practice Module 2</title>
+  </head>
+  <body>
+    <button onclick="myEvent('click hoyeche')">onClick</button> 
+    <button onmouseover="myEvent('mouse over hoyeche')">onMouseIn</button>
+    <button onmouseout="myEvent('mouse out hoyeche')">onMouseOut</button><br/><br/><br/>
+    <input onchange="myEvent('onChanging')" /><br/><br/>
+    <input onblur="myEvent('onBluring')" /><br/><br/>
+    <input onkeydown="myEvent('on key downing')" /><br/><br/>
+    <input onkeyup="myEvent('on key uping')" />
+    <script>
+      function myEvent(msg) {
+        console.log(msg);
+      }
+    </script>
+  </body>
+</html>

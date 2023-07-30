@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation</title>
+</head>
+<body>
+    <script>
+
+  navigator.geolocation.getCurrentPosition((position)=>{
+  let latitude = position.coords.latitude;
+  let speed = position.coords.speed ;
+  let altitude = position.coords.altitude ;
+  let longitude = position.coords.longitude ;
+ 
+
+  document.write("Latitude:" + latitude + "<br/>")
+  document.write("speed:" + speed + "<br/>")
+  document.write("altitude:" + altitude + "<br/>")
+  document.write("longitude:" + longitude + "<br/>")
+
+  })
+
+    </script>
+</body>
+</html>
