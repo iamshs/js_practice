@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find in Dom</title>
+</head>
+<body>
+ 
+ <!-- Finding by Id    -->
+ <h1 id="myId"></h1>
+
+ <!-- Finding by ClassName -->
+ <h2 class="myClass"> </h2>
+ <p class="myClass"> </p>
+
+ <!-- Finding by name -->
+ <button name="btn"></button>
+ <i><div name="btn"></div></i>
+
+ <!-- Finding by tagname -->
+
+ <h4></h4>
+
+<script>
+//Manipulations by id
+let myElement1 = document.getElementById("myId")
+myElement1.innerHTML=("got by id")
+
+//Manipulating by Class
+let myElements2 = document.getElementsByClassName("myClass")
+
+myElements2[0].innerHTML=("got by class")
+myElements2[1].innerHTML=("got by class")
+
+//Manipulations by name
+var elements3 = document.getElementsByName("btn")
+elements3[0].innerHTML=("got by name")
+elements3[1].innerHTML=("got by name")
+
+//Manipulating by tag name
+
+var elements4 = document.getElementsByTagName('h4')
+elements4[0].innerHTML=("i had find it by tagname")
+
+    </script>
+</body>
+</html>

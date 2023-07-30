@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Document</title>
+</head>
+<body>
+   
+    <p></p>
+    <button onclick="Demo()">Click</button>
+    <button onclick="demo3()">Replace</button>
+    <button onclick="demo4()">Writing new in new tab</button>
+    <!-- counting Element length -->
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+   <button onclick="demo2()">Element length</button>
+
+    <script>
+  
+  function Demo(){
+    //html dom document
+   var info = document.title ;
+   var info = document.cookie ;
+   var info = document.domain ;
+   var info = document.url ;
+   var info = document.lastModified;
+   document.getElementsByTagName('p')[0].innerHTML=info ;
+}
+   //replace something
+  
+  
+
+   function demo3(){
+    document.open('text/html' , 'replace');
+   document.write("<h2> Hello Bro </h2>");
+   document.close();
+   }
+
+
+   //open a new window and right there
+function demo4(){
+    let w = window.open()
+
+w.document.open()
+w.document.write("<h2> Welcome to a new tab </h2>")
+w.document.close()
+   }
+  
+
+  
+
+
+//counting element length
+  function demo2(){
+    let allElements = document.getElementsByTagName("h1")
+    let count = allElements.length
+    alert(count)
+  }
+
+
+    </script>
+</body>
+</html>
