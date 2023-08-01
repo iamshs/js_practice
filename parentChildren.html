@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent children relation</title>
+  </head>
+  <body>
+    <div class="gp">
+      <h1>Items:</h1>
+      <ul id="p">
+        <li class="c">Hello</li>
+        <li class="c">Hi</li>
+        <li class="c">Hey</li>
+      </ul>
+    </div>
+
+    <script>
+      const grandParent = document.querySelector(".gp");
+
+      //grand parent =====> parent====>children
+
+ 
+const parent = grandParent.children;
+//const children = parent[1].children;
+//const parent = document.querySelector("#p");
+const children = parent.children;
+
+//direct grand parent to children
+
+/*
+const children = grandParent.querySelector(".c") // the first child
+const children = grandParent.querySelectorAll(".c") //accessing all the child
+*/
+
+
+
+//children to parent
+
+      
+/* 
+ const children = document.querySelector(".c")
+ const parent = children.parentElement
+ */
+
+    
+ //children to grandParent
+
+/*
+const children = document.querySelector(".c")
+const grandParent = children.closest(".gp")
+*/
+      
+//reLation between siblings (next element)
+      
+/*
+ const children1 = document.querySelector(".c");
+ let children2 = children1.nextElementSibling;
+ children2.style.color="red"
+ */
+
+//previous element
+
+/*
+const children2 = document.querySelector(".c").nextElementSibling;
+const children1 = children2.previousElementSibling;
+children1.style.color="red"
+*/
+
+
+    </script>
+  </body>
+</html>
