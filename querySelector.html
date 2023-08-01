@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query Selector</title>
+</head>
+<body>
+    <h1 id="myID">H1</h1>
+    <h3 class="myClass">H1</h3>
+    <h4 name="myName">H1</h4>
+    <p>H1</p>
+    <input placeholder="hello" />
+     <button onclick="findByQuerySelector()">Click</button>
+
+    <script>
+   function findByQuerySelector() {
+    document.querySelector("#myID").innerHTML="h1 manipulated by id"
+    document.querySelector(".myClass").innerHTML="h3 manipulated by CLass"
+    document.querySelector("h4[name='myName']").innerHTML="h4 manipulated by Name"
+    document.querySelector("p").innerHTML="h3 manipulated by Tag name"
+    document.querySelector("input").placeholder="Your Name"
+   }
+
+    </script>
+</body>
+</html>
