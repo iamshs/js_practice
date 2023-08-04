@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax get method</title>
+</head>
+<body>
+ 
+
+<!-- axios cdn -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct" ;
+
+
+//getting data by async await method
+/*requestByAsync();
+async function requestByAsync(){
+ 
+    let res = await fetch(URL) ;
+    let data = await res.json()
+    console.log(data) ;
+    document.write(JSON.stringify(data));
+}*/
+
+//get data by fetch
+
+/*
+function requestByFetch() {
+    fetch(URL).then(res=>res.json()).then(data=>{
+        console.log(data);
+        document.write(JSON.stringify(data));
+    })
+}
+requestByFetch()
+*/
+
+//get data by axios promises
+
+/*async function requestAxiosAsync(){
+    
+    let res = await axios.get(URL);
+    let jData = await res.data
+    console.log(jData);
+    document.write(JSON.stringify(jData));
+}
+requestAxiosAsync()
+*/
+
+//axios with fetch
+
+/*
+function axiosWithFetch(){
+    axios.get(URL).then(res=>res.data).then(jData=>{
+        console.log(jData);
+        document.write(JSON.stringify(jData));
+    })
+}
+axiosWithFetch()
+*/
+
+
+//simple axios promises
+
+/*function simpleAxios(){
+    axios.get(URL).then(res=>{
+        let jData = res.data ;
+        console.log(jData);
+        document.write(JSON.stringify(jData));
+    })
+}*/
+simpleAxios()
+</script>
+
+
+</body>
+</html>
